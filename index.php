@@ -4,6 +4,9 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/webdev/css/style.css">
+        
                 <?php wp_head(); ?>
                 </head>
                 <body <?php body_class(); ?>>
@@ -13,6 +16,10 @@
                                     <h2><?php the_title(); ?></h2>
                                             <div><?php the_content(); ?></div>
                                                 <?php endwhile; endif; ?>
+
+                    <!-- Link to JavaScript -->
+    <script src="<?php echo get_template_directory_uri(); ?>/webdev/asset/script.js"></script>
+        
                                                     <?php wp_footer(); ?>
                                                     </body>
                                                     </html>
